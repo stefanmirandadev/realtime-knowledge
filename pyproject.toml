@@ -1,0 +1,34 @@
+[project]
+name = "realtime-knowledge"
+version = "0.1.0"
+description = "Continuously evolving AI retrieval platform"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "sqlalchemy",
+    "psycopg[binary]",
+    "qdrant-client",
+    "sentence-transformers",
+    "transformers",
+    "torch",
+    "httpx",
+    "python-dotenv",
+    "structlog",
+    "ragas",
+    "deepeval",
+    "numpy",
+    "pandas",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "ruff",
+    "mypy",
+    "ipython",
+    "jupyter",
+]
